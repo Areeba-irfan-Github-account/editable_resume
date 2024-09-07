@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Editable Resume</h1>
+    </header>
+
+    <main>
+        <section id="personal-info">
+            <h2>Personal Information</h2>
+            <img id="profile-picture" src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="contact-details">
+                <p><strong>Name:</strong> <span id="name" contenteditable="true">Areeba</span></p>
+                <p><strong>Email:</strong> <span id="email" contenteditable="true">m.ali9851kk@gmail.com</span></p>
+                <p><strong>Phone:</strong> <span id="phone" contenteditable="true">123-456-7890</span></p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3 id="degree" contenteditable="true">Bachelor's Degree in Software Engineering</h3>
+                <p><strong id="university" contenteditable="true">University of ABC</strong> - <span id="year" contenteditable="true">2020 - 2024</span></p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul id="skills-list">
+                <li contenteditable="true">Next.js</li>
+                <li contenteditable="true">TypeScript</li>
+                <li contenteditable="true">Tailwind CSS</li>
+                <li contenteditable="true">JavaScript</li>
+                <li contenteditable="true">HTML & CSS</li>
+            </ul>
+        </section>
+
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3 id="job-title" contenteditable="true">Frontend Developer</h3>
+                <p><strong id="employer" contenteditable="true">Senior Student</strong> - <span id="work-year" contenteditable="true">May 2024</span></p>
+                <p id="job-description" contenteditable="true">Helped the companions.</p>
+            </div>
+        </section>
+
+        <button id="save-btn">Save Changes</button>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
